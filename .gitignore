@@ -1,0 +1,14 @@
+# Credenciais locais (use LoginPHP/config.example.php como modelo)
+LoginPHP/config.php
+
+# Dependências do Composer (instale com: composer install)
+LoginPHP/lib/vendor/
+
+# Arquivos do Visual Studio / editores
+.vs/
+.vscode/
+.idea/
+*.sqlite
+*.sqlite-journal
+.DS_Store
+Thumbs.db

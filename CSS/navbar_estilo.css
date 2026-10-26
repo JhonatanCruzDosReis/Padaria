@@ -1,0 +1,112 @@
+:root {
+  --logo-altura: 80px;
+  --fonte-tamanho: 17px;
+  --espaco-links: 18px;
+  --cor-texto: #000000;
+  --cor-hover: #009688;
+  --peso-fonte: 500;
+  --navbar-altura: 120px;
+  --logo-largura: 150px;
+  --font-size: 17px;
+  --logo-altura: 150px;
+  --logo-largura: 150px;
+}
+
+.navbar {
+  background-color: #fdfdfd;
+  font-weight: var(--peso-fonte);
+  height: var(--navbar-altura);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar-brand {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: var(--logo-altura);
+  width: auto;
+  max-width: 100%;
+}
+
+.navbar-nav .nav-link {
+  color: var(--cor-texto) !important;
+  margin-left: var(--espaco-links);
+  font-size: var(--fonte-tamanho);
+  transition: color 0.2s ease;
+}
+
+.navbar-collapse {
+  transition: background-color 0.0s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--cor-hover) !important;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: white;
+}
+
+body.dark-mode .navbar .nav-link {
+    color: #e0e0e0 !important;
+}
+body.dark-mode .navbar .nav-link:hover {
+    color: #ffffff !important;
+}
+/* 🔥 BOTÕES EM DARK MODE: Gradiente escuro */
+body.dark-mode .navbar-nav .nav-item button {
+    background: linear-gradient(90deg, #555, #777);
+    color: #fff;
+}
+body.dark-mode .navbar-collapse.collapse.show {
+    background-color: #000000;
+}
+body.dark-mode .popup {
+    background: #1e1e1e;
+    color: #f1f1f1;
+}
+body.dark-mode .popup input {
+    background: #2c2c2c;
+    color: #f1f1f1;
+    border: 1px solid #555;
+}
+body.dark-mode .popup input::placeholder {
+    color: #bbb;
+}
+/* 🔥 BOTÕES DO POPUP ALTERADOS: Gradiente */
+body.dark-mode .popup button {
+    background: linear-gradient(90deg, #b38b59, #e4c49b);
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+body.dark-mode .popup button:hover {
+    background: linear-gradient(90deg, #a47844, #d3b182);
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(179, 139, 89, 0.3);
+}
+body.dark-mode .fechar {
+    color: #f1f1f1;
+}
+body.dark-mode .link a {
+    color: #64b5f6;
+}
